@@ -20,7 +20,8 @@ type User = {
 name: string;
 age: number;
 };
----
+
+====================
 
 2.What is the use of the keyof keyword in TypeScript? Provide an example.
 
@@ -35,7 +36,8 @@ email:string;
 };
 
 type UserKeys = keyof User;
----
+
+====================
 
 3.Explain the difference between any, unknown, and never types in TypeScript.
 
@@ -53,12 +55,9 @@ unknown type মানে,এটা যেকোনো কিছু হতে �
 
 const discountCalculator = (input: unknown): void => {
 if (typeof input === "number") {
-const discountedPrice = input _ 0.1;
-console.log(discountedPrice);
+console.log(`${input} input is a number`);
 } else if (typeof input === "string") {
-const [inputSplited] = input.split(" ");
-const result = Number(inputSplited) _ 0.1;
-console.log(result);
+console.log(`${input} input is a string`);
 } else {
 console.log("Wrong input");
 }
@@ -77,7 +76,8 @@ throw new Error(msg);
 };
 
 throwError("Error");
----
+
+====================
 
 4.What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
 
@@ -106,7 +106,8 @@ User = "USER",
 Guest = "GUEST"
 }
 const role: Roles = Roles.Admin;
----
+
+====================
 
 5.Provide an example of using union and intersection types in TypeScript.
 
@@ -136,27 +137,26 @@ intersection type মানে দুই বা ততোধিক টাইপ�
 উদাহরণঃ
 
 type Employee = {
-  id: string;
-  name: string;
-  phoneNo: string;
+id: string;
+name: string;
+phoneNo: string;
 };
 এর মধ্যে একজন Employee এর তথ্য আছে— id, name, phoneNo.
 
 type Manager = {
-  designation: string;
-  teamSize: number;
+designation: string;
+teamSize: number;
 };
 এর মধ্যে একজন Employee এর তথ্য আছে—
-
 
 type EmployeeManager = Employee & Manager;
 
 const chowdhurySaheb: EmployeeManager = {
-  id: "123",
-  name: "Chowdhury Saheb",
-  phoneNo: "017",
-  designation: "Manager",
-  teamSize: 5,
+id: "123",
+name: "Chowdhury Saheb",
+phoneNo: "017",
+designation: "Manager",
+teamSize: 5,
 };
 
 console.log(chowdhurySaheb);
