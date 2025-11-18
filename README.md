@@ -1,5 +1,3 @@
-# ts-problem-solve
-
 1.What are some differences between interfaces and types in TypeScript?
 
 Typescript এ interface এবং type alias উভয়ই object এর স্ট্রাকচার ডিফাইন করতে ব্যবহৃত হয়।প্রায় একই রকম হলেও interface এবং type alias এর মধ্যে কিছু পার্থক্য আছে।
