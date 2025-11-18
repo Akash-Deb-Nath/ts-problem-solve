@@ -21,7 +21,7 @@ name: string;
 age: number;
 };
 
-====================
+---
 
 2.What is the use of the keyof keyword in TypeScript? Provide an example.
 
@@ -37,7 +37,7 @@ email:string;
 
 type UserKeys = keyof User;
 
-====================
+---
 
 3.Explain the difference between any, unknown, and never types in TypeScript.
 
@@ -77,7 +77,7 @@ throw new Error(msg);
 
 throwError("Error");
 
-====================
+---
 
 4.What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
 
@@ -107,7 +107,7 @@ Guest = "GUEST"
 }
 const role: Roles = Roles.Admin;
 
-====================
+---
 
 5.Provide an example of using union and intersection types in TypeScript.
 
